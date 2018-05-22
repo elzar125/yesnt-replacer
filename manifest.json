@@ -1,0 +1,28 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "name": "Yesn't Replacer",
+    "version": "1.0.1",
+    "description": "Corrects the spelling of the English dictionary word No to Yesn't.",
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+    "icons": { 
+      "16": "img/icon16.png",
+     "128": "img/icon128.png",
+      "48": "img/icon48.png"
+    },
+    "browser_action": {
+      "default_icon": "img/yesnt-icon.png",
+      "default_popup": "html/popup.html"
+     },
+    "permissions": [
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["import/jquery-3.3.1.min.js", "import/jquery-ui.min.js", "import/jquery.switchButton.js", "js/background.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "manifest_version": 2
+  }

@@ -1,0 +1,49 @@
+#page {
+    white-space: nowrap;
+    text-align: center; margin: 1em 0;
+    width: 300px;
+    height: 100%;
+}
+
+h1 {
+    font-family: inherit;
+    text-align: center;
+    padding: 10px;
+}
+
+#logo-img {
+    padding: 10px;
+    vertical-align: middle;
+    max-height: 70px;
+    max-width: 160px;
+}
+
+.row {
+
+}
+
+.row a {
+    font-size: 16px;
+}
+
+.row ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.row li {
+    list-style: none;
+    line-height: 2;
+    font-family: 'Calibri'
+}
+
+.switch {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 50px;
+}
