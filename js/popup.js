@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#toggle-ext").switchButton();
     $('body').on('click', 'a', function(){
         chrome.tabs.create({url: $(this).attr('href')});
         return false;
@@ -10,8 +11,6 @@ function toggleExtension(action) {
         toggle: action
     });
 }
-
-$("#toggle-ext").switchButton();
 
 $(document).on("change", "#toggle-ext", function(){
     if(this.checked) {
